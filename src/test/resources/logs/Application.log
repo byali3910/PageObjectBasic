@@ -1,0 +1,14 @@
+INFO    2020-12-29 02:31:11,646 [main] com.w2a.base.Testbase  - Config file loadeded !!!
+INFO    2020-12-29 02:31:11,647 [main] com.w2a.base.Testbase  - OR file loaded !!!
+INFO    2020-12-29 02:31:23,493 [main] com.w2a.base.Testbase  - Chrome Launched !!!
+INFO    2020-12-29 02:31:27,870 [main] com.w2a.base.Testbase  - Navigated To :http://www.way2automation.com/angularjs-protractor/banking/#/login
+INFO    2020-12-29 02:31:30,536 [main] com.w2a.base.Testbase  - Inside Login Test
+INFO    2020-12-29 02:31:30,720 [main] com.w2a.base.Testbase  - Clicking on elementbmlBtn_CSS
+INFO    2020-12-29 02:31:30,720 [main] com.w2a.base.Testbase  - Finding an elementaddCustomerBtn
+INFO    2020-12-29 02:31:30,737 [main] com.w2a.base.Testbase  - Login Succesfully Executed
+INFO    2020-12-29 02:31:31,903 [main] com.w2a.base.Testbase  - Clicking on elementaddCustomerBtn_CSS
+INFO    2020-12-29 02:31:32,499 [main] com.w2a.base.Testbase  - Clicking on elementfirstname_CSSEntering value As Mantesh
+INFO    2020-12-29 02:31:32,688 [main] com.w2a.base.Testbase  - Clicking on elementlastname_CSSEntering value As Byali
+INFO    2020-12-29 02:31:32,837 [main] com.w2a.base.Testbase  - Clicking on elementpostcode_CSSEntering value As abc1234
+INFO    2020-12-29 02:31:33,437 [main] com.w2a.base.Testbase  - Clicking on elementaddbtn_CSS
+INFO    2020-12-29 02:31:38,657 [main] com.w2a.base.Testbase  - Test Execution Completed !!!
