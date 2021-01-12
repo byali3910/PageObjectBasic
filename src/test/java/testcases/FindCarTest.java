@@ -44,6 +44,6 @@ public class FindCarTest extends Testbase{
 		}
 		
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 	}
 }

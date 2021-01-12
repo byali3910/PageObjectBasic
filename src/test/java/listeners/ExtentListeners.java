@@ -31,7 +31,7 @@ import utilities.TestConfig;
 
 
 
-public class ExtentListeners  extends Testbase implements ITestListener, ISuiteListener{
+public class ExtentListeners extends Testbase implements ITestListener, ISuiteListener{
 	
 	public String messageBody;
 
@@ -44,7 +44,6 @@ public class ExtentListeners  extends Testbase implements ITestListener, ISuiteL
 
 		 String param = (String)result.getParameters()[0];
 		 test = extent.createTest(result.getTestClass().getName()+"     @TestCase : "+result.getMethod().getMethodName() +" -- "+param);
-
 
 	}
 
