@@ -17,5 +17,11 @@
 			<class name="testcases.FindCarTest" />
 		</classes>
 	</test> <!-- Test -->
+	
+	<test name="Find Car Test">
+		<classes>
+			<class name="testcases.CarPriceTest" />
+		</classes>
+	</test> <!-- Test -->
 
 </suite> <!-- Suite -->
