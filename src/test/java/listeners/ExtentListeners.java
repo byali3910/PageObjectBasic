@@ -63,7 +63,7 @@ public class ExtentListeners extends Testbase implements ITestListener, ISuiteLi
 		
 		//ReportNG Report
 		
-		try {
+		/*try {
 			ExtentManager.captureScreenshot();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -91,7 +91,7 @@ public class ExtentListeners extends Testbase implements ITestListener, ISuiteLi
 		
 		
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
-		test.log(Status.FAIL, m);
+		test.log(Status.FAIL, m);*/
 		
 		
 
