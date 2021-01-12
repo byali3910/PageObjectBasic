@@ -34,7 +34,7 @@ import utilities.TestConfig;
 public class ExtentListeners extends Testbase implements ITestListener, ISuiteListener{
 	
 	public String messageBody;
-
+	
 	static Date d = new Date();
 	static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
@@ -64,16 +64,16 @@ public class ExtentListeners extends Testbase implements ITestListener, ISuiteLi
 		//ReportNG Report
 		
 		try {
-			captureScreenshot();
-		} catch (IOException e1) {
+			ExtentManager.captureScreenshot();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			e.printStackTrace();
 		}
 		
 		System.setProperty("org.uncommons.reportng.escape-output","false");
-		Reporter.log("<a href="+screenshotName+" target=\"_blank\">Screenshot link</a>");
+		Reporter.log("<a href="+ExtentManager.screenshotName+" target=\"_blank\">Screenshot link</a>");
 		Reporter.log("<br>");
-		Reporter.log("<a href="+screenshotName+" target=\"_blank\"><img src="+screenshotName+" height=200 width=200></a>");
+		Reporter.log("<a href="+ExtentManager.screenshotName+" target=\"_blank\"><img src="+ExtentManager.screenshotName+" height=200 width=200></a>");
 
 		//Extent Report		
 		
@@ -85,7 +85,7 @@ public class ExtentListeners extends Testbase implements ITestListener, ISuiteLi
 		String methodName=result.getMethod().getMethodName();
 		String logText="<b>"+"TEST CASE:- "+ methodName.toUpperCase()+ " FAILED"+"</b>";		
 	
-		String screenshot = screenshotName;
+		String screenshot = ExtentManager.screenshotName;
 		test.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b><br>",
 		MediaEntityBuilder.createScreenCaptureFromPath(screenshot).build());
 		
@@ -112,8 +112,7 @@ public class ExtentListeners extends Testbase implements ITestListener, ISuiteLi
 
 	public void onStart(ITestContext context) {
 
-		
-
+	
 	}
 
 	public void onFinish(ITestContext context) {

@@ -23,7 +23,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 import com.aventstack.extentreports.ExtentTest;
 import utilities.ExcelReader;
@@ -38,25 +37,7 @@ public class Testbase {
 	public WebDriverWait wait;
 	public ExtentTest test;
 	public WebElement dropdown;
-	public String screenshotPath;
-	public String screenshotName;
 
-	public void captureScreenshot() throws IOException
-	{
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		Date d = new Date();
-		screenshotName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
-		FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenshotName));
-	}
-	
-	public void captureElementScreenshot(WebElement element) throws IOException
-	{
-		File scrFile = ((TakesScreenshot) element).getScreenshotAs(OutputType.FILE);
-		Date d = new Date();
-		screenshotName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
-		FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenshotName));
-	}
-	
 	
 	public void setUp(String browserName) {
 

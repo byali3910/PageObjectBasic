@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static CarBase car;
 	
 	

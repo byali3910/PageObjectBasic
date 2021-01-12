@@ -8,7 +8,7 @@
 		<!-- XML Report -->
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
 		<!-- Extent/Report Report -->
-		<listener class-name="listeners.ExtentListeners"></listener>
+		 <listener class-name="listeners.ExtentListeners"></listener> 
 
 	</listeners>
 
@@ -18,10 +18,10 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="Car Price Test">
+ 	<test name="Car Price Test">
 		<classes>
 			<class name="testcases.CarPriceTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test> 
 
 </suite> <!-- Suite -->
