@@ -18,7 +18,6 @@ public class CarPriceTest extends Testbase{
 		setUp(browserName);
 		if(brandName.equals("Hyundai"))
 		{
-			Assert.fail();
 			HomePage home = new HomePage(driver);
 			home.findNewCar().selectHyundaicar();
 			Assert.assertTrue(BasePage.car.getCarTitile().contains(brandName));
